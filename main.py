@@ -1,9 +1,9 @@
 from tkinter import *
-from tkinter import messagebox, TclError
+from tkinter import messagebox
 
 
 def countdown(count=3):
-    global text_before, file_num
+    global text_before
     if count > -1:
         counter = window.after(1000, countdown, count-1)
     if count == 0 and text_before == text_after:
